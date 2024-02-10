@@ -3,13 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - NariKang</title>
+    <title>@ViewData["Title"] - NariKang's Page</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/NariKang.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/NariKang.styles.css" asp-append-version="true" />    
+    <link rel="icon" type="image/png" href="~/logo.png">
 </head>
 <body>
     <header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">NariKang</a>
@@ -29,7 +31,20 @@
                 </div>
             </div>
         </nav>
+        <div class="text-center">
+        <h1>Explore Nari's hobbies! Welcome to the Hobby Haven.</h1>
+        <p>
+            This site is designed for those curious about me or who want to learn and share in the hobbies I enjoy. <br />
+            Step into a world where hobbies can become talents! Whether it's cooking your first meal or starting your first game, <br />
+            I'm here to help you improve in the areas you desire. Let's learn and master various hobbies together.
+        </p>
+        </div>
     </header>
+    <div class="text-center">
+    <img src="~/headphoneprofile.jpeg" class="pic1" />
+    <br />
+        
+    </div>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
